@@ -1,0 +1,18 @@
+<template>
+    <view>
+        cates
+        <van-badge-group active="{{ active }}" bind:change="onChange">
+            <van-badge title="标签名称" wx:for='{{cateList}}' wx:key='index'/>
+        </van-badge-group>
+    </view>
+</template>
+<script>
+import wepy from 'wepy'
+import mix from '@/mixins/tabs/cates.js'
+export default class extends wepy.page {
+    mixins=[mix]
+}
+</script>
+<style lang="less">
+    
+</style>
